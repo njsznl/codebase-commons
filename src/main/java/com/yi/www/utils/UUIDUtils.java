@@ -7,14 +7,15 @@ import java.util.UUID;
 /***
  * uuid工具使用集合
  */
-public class UUIDUtils {
+class UUIDUtils {
 
     /***
-     * 获取
+     * 获取一个uuid
      */
     @Test
-    public  void getUuid(){
+    private void getUuid(){
         String uuid = UUID.randomUUID().toString().replace("-","").toUpperCase();
         System.out.println(uuid);
     }
+
 }
